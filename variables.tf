@@ -662,3 +662,9 @@ variable "allow_ssl_requests_only" {
   default     = true
   description = "Set to `true` to require requests to use Secure Socket Layer (HTTPS/SSL). This will explicitly deny access to HTTP requests"
 }
+
+variable "custom_cors_rules" {
+  type        = any
+  default     = {}
+  description = "Custom cors rules for the S3 bucket"
+}
